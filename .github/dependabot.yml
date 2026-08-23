@@ -15,13 +15,15 @@ updates:
         update-types: [minor, patch]
     ignore:
       # The toolchain (AGP 8.7.3 / Kotlin 2.0.21 / compileSdk 35) moves as one deliberate step,
-      # not as a series of dependency bumps: AndroidX 1.13+ requires AGP 8.9.1+.
+      # not as a series of dependency bumps: current AndroidX and AGP releases require each other.
+      # Until that work lands (see the toolchain upgrade issue), only patch updates are accepted here.
       - dependency-name: "androidx.*"
-        update-types: [version-update:semver-major]
-      - dependency-name: "org.jetbrains.kotlin*"
         update-types: [version-update:semver-major, version-update:semver-minor]
-      - dependency-name: "org.jetbrains.kotlinx:kotlinx-coroutines-*"
+      - dependency-name: "com.android.*"
         update-types: [version-update:semver-major, version-update:semver-minor]
+      - dependency-name: "org.jetbrains.*"
+        update-types: [version-update:semver-major, version-update:semver-minor]
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
