@@ -5,11 +5,28 @@ updates:
     schedule:
       interval: monthly
     open-pull-requests-limit: 5
-    labels:
-      - dependencies
+    labels: [dependencies]
+    groups:
+      androidx:
+        patterns: ["androidx.*"]
+        update-types: [minor, patch]
+      kotlin:
+        patterns: ["org.jetbrains.*"]
+        update-types: [minor, patch]
+    ignore:
+      # The toolchain (AGP 8.7.3 / Kotlin 2.0.21 / compileSdk 35) moves as one deliberate step,
+      # not as a series of dependency bumps: AndroidX 1.13+ requires AGP 8.9.1+.
+      - dependency-name: "androidx.*"
+        update-types: [version-update:semver-major]
+      - dependency-name: "org.jetbrains.kotlin*"
+        update-types: [version-update:semver-major, version-update:semver-minor]
+      - dependency-name: "org.jetbrains.kotlinx:kotlinx-coroutines-*"
+        update-types: [version-update:semver-major, version-update:semver-minor]
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
       interval: monthly
-    labels:
-      - dependencies
+    labels: [dependencies]
+    groups:
+      actions:
+        patterns: ["*"]

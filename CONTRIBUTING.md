@@ -48,4 +48,4 @@ Participation is covered by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Licence of contributions
 
-By contributing you agree that your work is published under the [Apache License 2.0](LICENSE) of this project, including the patent grant in section 3.
+By contributing you agree that your work is published under the [Apache License 2.0](LICENSE) of this project, including the patent grant in section 3. There is no contributor licence agreement to sign and no copyright assignment: you keep the copyright to what you write.
