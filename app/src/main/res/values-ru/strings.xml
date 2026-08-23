@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Курсы валют</string>
+    <string name="rates_for">Курсы на %1$s</string>
+    <string name="loaded_at">загружено %1$s</string>
+    <string name="embedded_set">встроенный набор</string>
+    <string name="no_network">нет сети</string>
+    <string name="update_failed">не удалось обновить</string>
+    <string name="stale_prefix">Курсы могли устареть:</string>
+    <string name="separator">" · "</string>
+    <string name="rate_unavailable">курс недоступен</string>
+    <string name="rate_line">1 %1$s = %2$s %3$s</string>
+    <string name="no_amount">—</string>
+    <string name="zero_hint">0</string>
+    <string name="add_currency">+ Добавить валюту</string>
+    <string name="picker_title">Добавить валюту</string>
+    <string name="search_hint">Поиск по коду или названию</string>
+    <string name="group_metals">Золото, серебро, биткоин</string>
+    <string name="group_fiat">Валюты</string>
+    <string name="already_added">добавлена</string>
+    <string name="back">Назад</string>
+    <string name="amount_field">Сумма</string>
+    <string name="refreshing">Обновление</string>
+    <string name="tap_to_refresh">Коснитесь, чтобы обновить сейчас</string>
+    <string name="delete_row">Удалить %1$s</string>
+    <string name="delete_unavailable">Нельзя удалить: нужны минимум две строки</string>
+    <string name="drag_handle">Перетащить %1$s: удерживайте и тяните</string>
+    <string name="key_backspace">Стереть</string>
+    <string name="key_enter">Ввод</string>
+    <string name="key_equals">Равно</string>
+    <string name="key_plus">Плюс</string>
+    <string name="key_minus">Минус</string>
+    <string name="key_times">Умножить</string>
+    <string name="key_divide">Разделить</string>
+    <string name="key_separator">Десятичный разделитель</string>
+    <string name="result_line">= %1$s</string>
+    <string name="keypad">Клавиатура калькулятора</string>
+    <string name="swipe_refresh">Свайп вправо — обновить источник этой валюты</string>
+</resources>

@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in the app behaves incorrectly
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please check the existing issues first — the same problem may already be reported.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw instead.
+      placeholder: I tapped the EUR row, typed 100, and ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: The release you installed, for example 0.3.0.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      placeholder: Pixel 6, Android 14
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network state
+      options:
+        - Online
+        - Offline (airplane mode or no connection)
+        - Unstable / unclear
+    validations:
+      required: true
+  - type: textarea
+    id: header
+    attributes:
+      label: Header line and screenshot
+      description: The "Rates for ... loaded ..." line at the top tells where the numbers came from. A screenshot showing it helps.
+    validations:
+      required: false

@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest an improvement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The app deliberately stays a single conversion screen with no backend, accounts or tracking.
+        Ideas that fit that shape are the easiest to accept — see CONTRIBUTING.md for what is out of scope.
+  - type: textarea
+    id: situation
+    attributes:
+      label: The situation you are in
+      description: What are you doing when you need this? What do you do today instead?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like the app to do
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+    validations:
+      required: false

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency Rates</string>
+    <string name="rates_for">Rates for %1$s</string>
+    <string name="loaded_at">loaded %1$s</string>
+    <string name="embedded_set">embedded set</string>
+    <string name="no_network">no network</string>
+    <string name="update_failed">could not update</string>
+    <string name="stale_prefix">Rates may be outdated:</string>
+    <string name="separator">" · "</string>
+    <string name="rate_unavailable">rate unavailable</string>
+    <string name="rate_line">1 %1$s = %2$s %3$s</string>
+    <string name="no_amount">—</string>
+    <string name="zero_hint">0</string>
+    <string name="add_currency">+ Add currency</string>
+    <string name="picker_title">Add currency</string>
+    <string name="search_hint">Search by code or name</string>
+    <string name="group_metals">Gold, silver, bitcoin</string>
+    <string name="group_fiat">Currencies</string>
+    <string name="already_added">added</string>
+    <string name="back">Back</string>
+    <string name="amount_field">Amount</string>
+    <string name="refreshing">Updating</string>
+    <string name="tap_to_refresh">Tap to update now</string>
+    <string name="delete_row">Delete %1$s</string>
+    <string name="delete_unavailable">Cannot delete: at least two rows are needed</string>
+    <string name="drag_handle">Drag %1$s: press and hold, then move</string>
+    <string name="key_backspace">Backspace</string>
+    <string name="key_enter">Enter</string>
+    <string name="key_equals">Equals</string>
+    <string name="key_plus">Plus</string>
+    <string name="key_minus">Minus</string>
+    <string name="key_times">Times</string>
+    <string name="key_divide">Divide</string>
+    <string name="key_separator">Decimal separator</string>
+    <string name="result_line">= %1$s</string>
+    <string name="keypad">Calculator keypad</string>
+    <string name="swipe_refresh">Swipe right to update this currency\'s source</string>
+</resources>
