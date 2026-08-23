@@ -4,7 +4,7 @@ title: Privacy Policy — Currency Rates
 
 # Privacy Policy
 
-**App:** Currency Rates (`com.dzhokhov.currencyrates`)
+**App:** Currency Rates (`io.github.dzhokhov.quotes`; builds before 0.4.0 used `com.dzhokhov.currencyrates`)
 **Effective date:** 23 August 2026
 
 ## Short version
@@ -52,7 +52,7 @@ Questions about this policy: open an issue at [github.com/dzhokhov/currency-rate
 
 # Политика конфиденциальности
 
-**Приложение:** «Курсы валют» (`com.dzhokhov.currencyrates`)
+**Приложение:** «Курсы валют» (`io.github.dzhokhov.quotes`; в сборках до 0.4.0 — `com.dzhokhov.currencyrates`)
 **Дата вступления в силу:** 23 августа 2026
 
 ## Коротко

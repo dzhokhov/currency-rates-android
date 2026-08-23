@@ -45,16 +45,32 @@ adb install -r currency-rates-<version>.apk
 
 - Android 8.0 (API 26) or newer.
 - The only system permission is internet access.
-- Releases are signed with the same key, so a newer version installs over an older one and keeps your list. A build made from source with your own key cannot replace a release build — uninstall first.
+- **Version 0.4.0 does not install over 0.3.0.** The application id changed from `com.dzhokhov.currencyrates` to `io.github.dzhokhov.quotes`, so Android treats it as a different app: uninstall the old one first. Your currency list is lost once, this time only.
 - Verify the download against the `.sha256` file published next to the APK:
 
 ```bash
 shasum -a 256 -c currency-rates-<version>.apk.sha256
 ```
 
+### Is this build really mine?
+
+The checksum proves the file arrived intact. To prove *who built it*, check the signing certificate:
+
+```bash
+apksigner verify --print-certs currency-rates-<version>.apk
+```
+
+Expected fingerprint of the signing certificate:
+
+```
+Signer #1 certificate SHA-256 digest: ad3322fd16cbaebd6b9b182184786be2ab8d6120a1da80c50941428c78ec83ad
+```
+
+**Two channels, two signatures.** Builds published here are signed with the project key above. When the app appears on Google Play, that build will be signed by Google (Play App Signing re-signs the upload), so **its certificate fingerprint will be different** — it will be published next to this one once available. A consequence worth knowing before you choose a channel: builds from different channels do not update each other and cannot be installed side by side, so switching means uninstalling and losing the saved list once.
+
 ## Build from source
 
-Requirements: JDK 17, Android SDK with platform 35 and build-tools 35.0.1. The Gradle wrapper pins Gradle 8.9.
+Requirements: JDK 17, Android SDK with platform 36 and build-tools 36.0.0. The Gradle wrapper pins Gradle 8.11.1.
 
 ```bash
 git clone https://github.com/dzhokhov/currency-rates-android.git

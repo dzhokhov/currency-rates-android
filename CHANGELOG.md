@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-08-23
+
+### Changed
+- The application id is now `io.github.dzhokhov.quotes` (was `com.dzhokhov.currencyrates`), chosen so it stays accurate as the app grows beyond currencies. **This build does not install over 0.3.0** — Android treats a different id as a different app, so the old one has to be uninstalled and the saved list is lost once.
+- Built against Android 16: `compileSdk` and `targetSdk` 36, Android Gradle Plugin 8.9.3, Gradle 8.11.1, Kotlin 2.1.21, Compose BOM 2025.05.01. Google Play requires apps submitted after 31 August 2026 to target Android 16.
+- Minimum supported version is unchanged: Android 8.0 (API 26).
+
+### Known issues
+- With the system font size set to its largest, the bottom row of the calculator keypad is clipped in landscape. The keys still work. Present in 0.3.0 as well, so this is not a regression; a fix is planned.
+- The known issue from 0.3.0 about the first Enter from an external keyboard still applies.
+
+
 ## [0.3.0] - 2026-08-23
 
 ### Added
@@ -34,6 +46,7 @@ All notable changes to this project are documented here. The format follows [Kee
 - Bundled starter rate set, on-device cache and background refresh, so the screen never waits for the network.
 - English and Russian interface following the device language.
 
-[Unreleased]: https://github.com/dzhokhov/currency-rates-android/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/dzhokhov/currency-rates-android/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/dzhokhov/currency-rates-android/releases/tag/v0.4.0
 [0.3.0]: https://github.com/dzhokhov/currency-rates-android/releases/tag/v0.3.0
 [0.2.0]: https://github.com/dzhokhov/currency-rates-android/releases/tag/v0.2.0

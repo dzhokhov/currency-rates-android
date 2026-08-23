@@ -5,7 +5,7 @@ A single Gradle module (`:app`), Kotlin and Jetpack Compose. No dependency injec
 ## Packages
 
 ```
-com.dzhokhov.currencyrates
+io.github.dzhokhov.quotes
 ├── core          currency registry, conversion, display rules, expressions, freshness, JSON
 │   ├── expr      expression model, evaluator, key mapping
 │   └── json      minimal JSON reader/writer
